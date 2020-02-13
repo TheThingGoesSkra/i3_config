@@ -222,11 +222,11 @@ hide_edge_borders both  # Hides some large black borders around windows
 
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 2
-gaps inner 10
-gaps outer 10
+gaps inner 8
+gaps outer 8
 
 # Wallpaper settings
-exec_always feh --bg-scale --randomize ~/Documents/gui/Wallpapers
+exec_always feh --bg-scale --randomize ~/GUI/Wallpapers
 exec_always  --no-startup-id compton --config ~/.config/i3/compton.conf
 
 exec --no-startup-id i3-msg 'workspace $ws1; exec firefox; workspace $ws2;'
