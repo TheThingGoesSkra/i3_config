@@ -107,7 +107,7 @@ bindsym $mod+w exec "rofi -show window"
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 1:🕸️
-set $ws2 2:☠️
+set $ws2 2:☠
 set $ws3 3:👿
 set $ws4 4:🔓
 set $ws5 5:⌨️
@@ -233,5 +233,6 @@ exec --no-startup-id i3-msg 'workspace $ws1; exec firefox; workspace $ws2;'
 exec --no-startup-id i3-msg 'workspace $ws2; exec i3-sensible-terminal --no-dbus -l "ws2"; workspace $ws3;'
 exec --no-startup-id i3-msg 'workspace $ws3; exec i3-sensible-terminal --no-dbus -l "ws3"; workspace $ws4;'
 exec --no-startup-id i3-msg 'workspace $ws4; exec atom;'
-
+ 
+exec ~/.config/i3/script.sh &
 # mc --colors base_color=lightgray,blue:normal=blue,default:selected=white,brightblue:marked=yellow,default:mark
